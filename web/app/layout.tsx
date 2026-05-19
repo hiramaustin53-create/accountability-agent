@@ -12,10 +12,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
-      <body style={{ fontFamily: 'system-ui, -apple-system, sans-serif', margin: 0, padding: '20px', background: '#f5f5f5', color: '#333' }}>
+      <body style={{ 
+        fontFamily: 'system-ui, -apple-system, sans-serif', 
+        margin: 0, 
+        padding: '20px', 
+        background: '#f5f5f5', 
+        color: '#333',
+        minHeight: '100vh'
+      }}>
         {children}
       </body>
     </html>
